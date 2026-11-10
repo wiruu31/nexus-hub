@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Panel admin Nexus Hub: kelola API key, modul, dan log.">
+  <title>Nexus</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+
+  <header class="bar">
+    <p class="brand">
+      <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <circle class="jack" cx="14" cy="14" r="6"/>
+      </svg>
+      <span>Nexus</span>
+    </p>
+    <button type="button" id="logout" class="btn" hidden>Keluar</button>
+  </header>
+
+  <nav id="nav" class="tabs" aria-label="Halaman panel" hidden>
+    <a href="#/beranda">Beranda</a>
+    <a href="#/keys">API Keys</a>
+    <a href="#/modul">Modul</a>
+    <a href="#/log">Log</a>
+  </nav>
+
+  <p id="flash" class="flash" role="status"></p>
+
+  <main id="main">
+    <noscript>
+      <h1>Panel Nexus butuh JavaScript</h1>
+      <p class="lede">Aktifkan JavaScript di browser ini, lalu muat ulang halaman.</p>
+    </noscript>
+  </main>
+</body>
+</html>
